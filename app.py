@@ -26,7 +26,7 @@ model = tf.keras.models.load_model("Trained_Model2.h5")
 
 selected_tab = option_menu(
     menu_title = None,
-    options = ['About Alzheimers', 'Model & Results', "How to Use", 'Alzheimers\'s Detection', "About Me"],
+    options = ['About Alzheimers', 'Model & Results', "How to Use", 'Alzheimers\'s Detection', "About Team"],
     icons = ['house-door', 'cpu', 'file-earmark-text', 'binoculars', 'people'],
     menu_icon = 'cast',
     default_index = 0,
@@ -261,7 +261,7 @@ elif selected_tab == 'How to Use':
 
 
 
-elif selected_tab == 'About Me':
+elif selected_tab == 'About Team':
     st.write("##")
 
     st.markdown("### Research Team")
