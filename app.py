@@ -264,12 +264,13 @@ elif selected_tab == 'How to Use':
 elif selected_tab == 'About Me':
     st.write("##")
 
+    st.markdown("### Research Team")
     st.markdown("*Institute of Information Technology, Jahangirnagar University, Dhaka-1342, Bangladesh*")
     st.write("##")
 
-    col1, col2, col3 = st.columns([1, 2, 1])
+    col1, col2 = st.columns(2)
 
-    with col2:
+    with col1:
         st.markdown("#### Farhana Chowdhury Ananda")
         pp = Image.open("profile pic/image.png")
         st.image(pp, output_format='PNG', width=250)
@@ -284,6 +285,19 @@ elif selected_tab == 'About Me':
         **Research Interests:** Deep Learning, Medical Image Processing, Computer Vision
 
         📧 farhana.c.ananda@gmail.com
+        """)
+
+    with col2:
+        st.markdown("#### Dr. Jesmin Akhter")
+        st.image("imgs/jesmin madam.jpg", width=250)
+        st.markdown("""
+        **Supervisor**
+
+        Professor at the Institute of Information Technology, Jahangirnagar University, Savar, Dhaka-1342.
+        Her research focuses on Internet of Things (IoT), Wireless Networks, Network Security, Software Engineering,
+        Complexity of Algorithms, and Machine Learning.
+
+        **Research Interests:** IoT, Wireless Networks, Network Security, Software Engineering, Machine Learning
         """)
 
     st.write("##")
