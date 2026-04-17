@@ -7,7 +7,7 @@ from streamlit_option_menu import option_menu
 
 st.set_page_config(page_title="Alzheimer's Disease Classification | Hybrid ConvNeXt-Swin-LoRA", layout='wide')
 
-st.markdown("<h1 style='text-align: center; color: gray;'>Hybrid ConvNeXt–Swin Transformer with LoRA<br>for Alzheimer's Disease Classification</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: gray;'>A Parameter-Efficient Hybrid ConvNeXt–Swin<br>for Alzheimer's Disease Classification</h1>", unsafe_allow_html=True)
 
 page_style = '''
                 <style>
@@ -288,22 +288,5 @@ elif selected_tab == 'About Me':
 
     st.write("##")
     st.markdown("---")
-    st.markdown("### Get in Touch")
-
-    contact_form = '''
-        <form action="https://formsubmit.co/ananda.stu2017@juniv.edu" method="POST">
-            <input type="hidden" name="_autoresponse" value="Thank you for your interest in our Alzheimer's Disease Classification research. We will get back to you soon.">
-            <input type="hidden" name="_template" value="table">
-            <input type="text" name="name" id = 'input' placeholder = "Your Name" required>
-            <input type="email" name="email" id = 'input' placeholder = "Your Email" required>
-            <textarea name = 'message' id = 'input' placeholder = 'Your Message' required></textarea>
-            <button onclick="document.getElementById('input').value = ''" type="submit">Send</button>
-        </form>
-    '''
-
-    c1, c2, c3 = st.columns([1, 2, 1])
-    with c2:
-        local_css("style/style.css")
-        st.markdown(contact_form, unsafe_allow_html=True)
 
 
